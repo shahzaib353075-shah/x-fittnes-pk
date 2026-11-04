@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - X-Fitness</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <h1>X-FITNESS</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="register.html">Register</a>
+            <a href="service.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="heading">
+        <h2>Contact Us</h2>
+        <p>We are here to help you achieve your fitness goals.</p>
+    </section>
+
+    <section class="about">
+        <div>
+            <h2>About X-Fitness</h2>
+            <p>
+                X-Fitness Pakistan provides gym training,
+                personal training and fitness classes.
+                Our goal is to help people stay healthy
+                and active.
+            </p>
+
+            <button type="button" onclick="toggleAbout()">
+                Show / Hide More
+            </button>
+
+            <p id="moreInfo" hidden>
+                We offer modern gym equipment, professional
+                trainers and a friendly workout environment.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>Have any questions? Send us a message.</p>
+            <p>Location: Pakistan</p>
+            <p>Email: info@example.com</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+            <h2>Send Message</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5"
+                      placeholder="Write your message"></textarea>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 X-Fitness Pakistan</p>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>

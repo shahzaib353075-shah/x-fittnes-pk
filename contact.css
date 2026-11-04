@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    color: #f32638;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f32638;
+}
+
+.heading {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.heading h2 {
+    color: #f32638;
+    margin-bottom: 15px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.about div {
+    max-width: 700px;
+}
+
+.about h2 {
+    color: #f32638;
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #f32638;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #b91425;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-info {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    color: #f32638;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form h2 {
+    color: #f32638;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #f32638;
+}
+
+#formMessage {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        padding: 25px 10px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    form, .contact-info {
+        padding: 20px;
+    }
+}
